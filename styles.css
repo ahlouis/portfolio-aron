@@ -1,0 +1,88 @@
+html {
+    background-color: white;
+    font-family: "NTR", sans-serif;
+  }
+  nav {
+    top: 0;
+    text-align: center;
+    color: #64ffda;
+    z-index: 1000;
+    font-size: 50px;
+  }
+  
+  nav a {
+      color: black;
+  }
+
+  nav a:hover {
+    color: gray;
+}
+  #welcome-section {
+    top: 100;
+    text-align: center;
+    margin-left: 50px;
+
+  }
+  #welcome-section h1 {
+    text-align: center;
+    color: black;
+    font-size: 100px;
+    
+  }
+  
+
+  
+  #about-me   {
+    color: black;
+    text-align: center;
+   
+    font-size: 25px;
+  }
+
+  
+  #projects  {
+    margin-top: 200px;
+    margin-left: 20px;
+    color: black;
+    text-align: center;
+  }
+
+  #projects  h1  {
+    font-size: 70px;
+  }
+
+  #projects img {
+    width: 50%;
+    height: auto;
+  }
+  
+  #contact {
+    text-align: center;
+    margin-left: 20px;
+    color: black;
+  }
+
+  #contact h1{
+    font-size: 70px;
+    
+  }
+
+  #contact a {
+    font-size: 100px;
+    position: left;
+    color: black;
+    padding: 70px;
+  }
+  
+  /* Media Query for smaller screens */
+      @media (max-width: 600px) {
+        #navbar {
+          flex-direction: column;
+          align-items: center;
+        }
+  
+        #navbar a {
+          padding: 15px;
+        }
+      }
+  
