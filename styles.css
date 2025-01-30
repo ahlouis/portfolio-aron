@@ -4,20 +4,25 @@ html {
   }
   nav {
     top: 0;
-    text-align: center;
+    text-align: right;
     color: #64ffda;
     z-index: 1000;
     font-size: 50px;
+    margin-right: 50px;
+    z-index: 1000;
+    position: sticky;
   }
   
   nav a {
       color: black;
+      text-decoration: none;
   }
 
   nav a:hover {
     color: gray;
 }
   #welcome-section {
+    max-width: 600px;
     top: 100;
     text-align: center;
     margin-left: 50px;
@@ -29,26 +34,93 @@ html {
     font-size: 100px;
     
   }
+
+  
   
 
   
   #about-me   {
+    max-width: 600px;
     color: black;
     text-align: center;
-   
     font-size: 25px;
+    margin: 0 auto;
+  
   }
+
+  .work-section {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: black;
+}
+
+.work-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px dashed #ddd;
+    
+}
+
+.work-item a {
+  text-decoration: none;
+  color:black;
+}
+
+.work-item a:hover {
+  color: gray;
+}
+.work-item:last-child {
+    border-bottom: none;
+}
+
+.logo img {
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.details {
+    flex: 1;
+    margin-left: 10px;
+}
+
+.company {
+    font-weight: bold;
+    font-size: 2rem;
+    display: block;
+    
+}
+
+.role {
+    font-size: 1rem;
+    color: #777;
+}
+
+.year {
+    font-size: 0.9rem;
+    color: #999;
+    white-space: nowrap;
+}
 
   
   #projects  {
-    margin-top: 200px;
-    margin-left: 20px;
     color: black;
-    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
   }
 
   #projects  h1  {
-    font-size: 70px;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: black;
   }
 
   #projects img {
@@ -57,13 +129,15 @@ html {
   }
   
   #contact {
-    text-align: center;
-    margin-left: 20px;
     color: black;
+    max-width: 600px;
+    margin: 0 auto;
   }
 
   #contact h1{
-    font-size: 70px;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: black;
     
   }
 
