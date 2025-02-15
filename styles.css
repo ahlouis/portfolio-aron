@@ -1,37 +1,33 @@
 html {
-    background-color: white;
+    background-color: hsl(216, 65%, 11%);
     font-family: 'Roboto Mono', monospace;
+    color: #a8b2d1;
   }
   nav {
     top: 0;
     text-align: right;
-    color: #64ffda;
     z-index: 1000;
     font-size: 50px;
     margin-right: 50px;
     z-index: 1000;
     position: sticky;
-    -webkit-text-stroke: 1px black;
-    color: transparent
+    color: #a8b2d1;
   }
 
   welcome-section h1 {
     font-family: 'Roboto Mono', monospace;
     font-weight: bold;
     font-style: italic; /* Remove this for non-italic bold */
-    -webkit-text-stroke: 1px black;
-    color: transparent;
   }
 
   
   
   nav a {
-      color: black;
       text-decoration: none;
   }
 
   nav a:hover {
-    color: gray;
+    color: green;
 }
   #welcome-section {
     max-width: 800px;
@@ -43,8 +39,8 @@ html {
   }
   #welcome-section h1 {
     text-align: left;
-    color: black;
     font-size: 100px;
+    color: #a8b2d1;
     
   }
 
@@ -54,13 +50,31 @@ html {
   
   #about-me   {
     max-width: 600px;
-    color: black;
     text-align: center;
     font-size: 25px;
     margin: 0 auto;
     margin-bottom: 200px;
   
   }
+
+  .about-description {
+    margin-left: 200px;
+    margin-bottom: 200px;
+    max-width: 850px;
+  }
+
+  .tech-stack {
+    list-style-type: none; /* Remove default bullets */
+    padding: 0;
+  }
+  
+  .tech-stack li::before {
+    content: "→"; /* Unicode arrow symbol */
+    padding-right: 10px; /* Space between arrow and text */
+    color: green; /* Color of the arrow */
+  }
+  
+
 
   .work-section {
     max-width: 600px;
@@ -70,7 +84,6 @@ html {
 h2 {
   margin-bottom: 20px;
   font-size: 1.5rem;
-  color: black;
     
 }
 
@@ -85,11 +98,10 @@ h2 {
 
 .work-item a {
   text-decoration: none;
-  color:black;
 }
 
 .work-item a:hover {
-  color: gray;
+  color: green;
 }
 .work-item:last-child {
     border-bottom: none;
@@ -128,7 +140,6 @@ h2 {
   
   #projects  {
     padding-top: 100px;
-    color: black;
     max-width: 600px;
     margin: 0 auto;
   }
@@ -136,7 +147,6 @@ h2 {
   #projects  h1  {
     margin-bottom: 20px;
     font-size: 1.5rem;
-    color: black;
   }
 
   #projects img {
@@ -146,7 +156,6 @@ h2 {
   
   #contact {
     padding-top: 100px;
-    color: black;
     max-width: 600px;
     margin: 0 auto;
   }
@@ -154,15 +163,18 @@ h2 {
   #contact h1{
     margin-bottom: 20px;
     font-size: 1.5rem;
-    color: black;
+    
     
   }
 
   #contact a {
     font-size: 100px;
     position: left;
-    color: black;
     padding: 70px;
+  }
+
+  a:visited {
+    color: inherit; /* Makes the visited link have the same color as the unvisited link */
   }
   
   /* Media Query for smaller screens */
