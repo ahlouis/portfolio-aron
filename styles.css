@@ -27,7 +27,7 @@ html {
   }
 
   nav a:hover {
-    color: green;
+    color: #64ffda;
 }
   #welcome-section {
     max-width: 800px;
@@ -40,7 +40,8 @@ html {
   #welcome-section h1 {
     text-align: left;
     font-size: 100px;
-    color: #a8b2d1;
+    color: #64ffda;
+    
     
   }
 
@@ -71,7 +72,7 @@ html {
   .tech-stack li::before {
     content: "→"; /* Unicode arrow symbol */
     padding-right: 10px; /* Space between arrow and text */
-    color: green; /* Color of the arrow */
+    color: #64ffda; /* Color of the arrow */
   }
   
 
@@ -84,6 +85,8 @@ html {
 h2 {
   margin-bottom: 20px;
   font-size: 1.5rem;
+  font-weight: bold;
+
     
 }
 
@@ -101,7 +104,7 @@ h2 {
 }
 
 .work-item a:hover {
-  color: green;
+  color: #64ffda;
 }
 .work-item:last-child {
     border-bottom: none;
