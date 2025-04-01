@@ -1,0 +1,64 @@
+html {
+    background-color: hsl(216, 65%, 11%);
+    font-family: 'Roboto Mono', monospace;
+    color: #a8b2d1;
+  }
+
+  * Sidebar styling */
+#sidebar {
+  width: 250px; /* Adjust width as needed */
+  background-color: hsl(216, 65%, 11%);
+  color: #a8b2d1;
+  position: fixed;
+  left: 250px;
+  top: 100px;
+  bottom: 0;
+  padding-top: 20px;
+  overflow-y: auto; /* Enables scrolling if content exceeds viewport */
+}
+
+#sidebar a {
+  display: block;
+  color: #a8b2d1;
+  padding: 15px 20px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+#sidebar a:hover {
+  color: #64ffda;
+}
+
+#projects {
+    margin-left: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch; /* Ensures all child elements have equal height */
+}
+
+.project {
+    flex: 1; /* Each project will take equal space */
+    margin: 10px; /* Adds space around each project */
+    padding: 20px;
+    border: 1px solid #ccc;
+    max-width: 600px;
+
+    box-sizing: border-box; /* Ensures padding and border are included in the width and height */
+}
+
+#projects img {
+max-width: 500px;
+max-height: 300px;
+
+}
+#projects p {
+    color:#64ffda;
+}
+#projects a:hover {
+    color: #64ffda;
+  }
+#projects a {
+    color: #a8b2d1;
+}
+
