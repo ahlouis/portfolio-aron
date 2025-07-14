@@ -1,117 +1,120 @@
 /* === Global Styles === */
 html {
-  background-color: #f6f1e7; 
-  font-family: 'Futura', 'Playfair Display', serif;
-  color: #3a3a3a;
+  background-color: #f4f4f4;
+  font-family: 'Lora', serif;
+  color: #2e2e2e;
 }
 
 a {
-  color: #89a1b4;
+  color: #6b7c8f;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 a:hover {
-  color: #d97c7c;
+  color: #a86c5c; /* muted wine */
+}
+
+body, p {
+  font-size: 16px;
+  color: #3a3a3a;
+  line-height: 1.6;
 }
 
 /* === Welcome Section === */
 #welcome-section {
   max-width: 800px;
-  margin: 40px auto 40px auto;
+  margin: 60px auto 40px auto;
   text-align: center;
 }
 
-.main-content {
-  margin-left: 300px; /* Account for sidebar */
-  min-height: 100vh;
-  max-width: 1000px;  /* wider content */
-  display: flex;
-  flex-direction: column;
-  justify-content: center; /* Vertically center */
-  padding: 0 40px;
-}
-
 #welcome-section h1 {
-  font-family: 'Futura', sans-serif;
-  font-size: 72px;
-  font-weight: bold;
-  color: #d97c7c;
-  text-transform: uppercase;
-  letter-spacing: 2px;
+  font-family: 'Playfair Display', serif;
+  font-size: 64px;
+  font-weight: 700;
+  color: #4d4d4d;
+  letter-spacing: 1px;
+  text-transform: none;
 }
 
 /* === Sidebar === */
 #sidebar {
   position: fixed;
-  left: 200px;           /* was 50px – bring it closer */
+  left: 160px;
   top: 0;
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding-left: 20px;
+  padding-left: 10px;
 }
 
 #sidebar::after {
   content: '';
   position: absolute;
-  right: -20px;          /* moves line to edge */
+  right: -15px;
   top: 0;
   height: 100%;
-  width: 2px;
-  background-color: #d97c7c;
+  width: 1px;
+  background-color: #a0a0a0;
 }
-
 
 #sidebar a {
   display: block;
-  padding: 15px 20px;
+  padding: 12px 18px;
   font-size: 18px;
-  color: #3a3a3a;
-  font-family: 'Cooper Hewitt', sans-serif;
+  color: #444;
+  font-family: 'Lora', serif;
 }
 
 #sidebar a:hover {
-  color: #d97c7c;
+  color: #a86c5c;
 }
 
 /* === About Section === */
 #about-body {
   margin-left: 300px;
-  max-width: 1000px;      /* wider content */
-  padding: 0 60px;        /* more breathing room */
+  max-width: 900px;
+  padding: 0 60px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   min-height: 100vh;
 }
 
+.about-description p {
+  margin-bottom: 12px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #3a3a3a;
+}
+
 .tech-stack {
   list-style-type: none;
   padding: 0;
-  font-family: 'Georgia', serif;
+  margin-top: 10px;
+  font-family: 'Lora', serif;
 }
 
 .tech-stack li::before {
-  content: "\2023"; /* Wes-style arrow */
+  content: "\2022";
   padding-right: 10px;
-  color: #f5c842;
+  color: #b2b8a3;
 }
 
 /* === Work Section === */
 .work-section {
-  max-width: 600px;
+  max-width: 700px;
   margin: 60px auto;
   padding: 0 20px;
 }
 
 h2 {
+  font-family: 'Playfair Display', serif;
   font-size: 2rem;
   margin-bottom: 20px;
-  color: #3a3a3a;
-  font-family: 'Playfair Display', serif;
+  color: #4a4a4a;
 }
 
 .work-item {
@@ -119,7 +122,7 @@ h2 {
   align-items: flex-start;
   gap: 24px;
   padding: 20px 0;
-  border-bottom: 1px dashed #ccc;
+  border-bottom: 1px solid #dcdcdc;
   flex-wrap: wrap;
 }
 
@@ -142,12 +145,12 @@ h2 {
   font-size: 1.5rem;
   font-weight: 700;
   color: #3a3a3a;
-  letter-spacing: 1px;
+  font-family: 'Lora', serif;
 }
 
 .role {
   font-size: 1rem;
-  color: #666;
+  color: #777;
   font-style: italic;
 }
 
@@ -158,34 +161,28 @@ h2 {
   padding-top: 4px;
 }
 
-/* === Contact Section === */
-#contact {
-  padding-top: 100px;
-  max-width: 600px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-#contact h1 {
-  margin-bottom: 20px;
-  font-size: 2rem;
-}
-
-#contact a {
-  font-size: 3rem;
-  display: inline-block;
-  padding: 20px;
-}
-
 /* === Media Queries === */
 @media (max-width: 768px) {
   #sidebar {
     display: none;
   }
+
   #about-body {
     margin: 0 auto;
   }
+
   #welcome-section h1 {
     font-size: 48px;
   }
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: none;
 }
