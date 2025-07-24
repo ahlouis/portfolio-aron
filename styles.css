@@ -20,12 +20,20 @@ body, p {
   color: #3a3a3a;
   line-height: 1.6;
 }
+img {
+  max-width: 600px;
+   display: block;
+  margin: 0 auto; /* centers it */
+  margin-top: -30px; /* move image higher by reducing top margin (adjust value as needed) */
+  max-height: 600px;
 
+}
 /* === Welcome Section === */
 #welcome-section {
   max-width: 800px;
-  margin: 60px auto 40px auto;
+  margin: 60px 0 40px auto;
   text-align: center;
+  
 }
 
 #welcome-section h1 {
@@ -35,6 +43,7 @@ body, p {
   color: #4d4d4d;
   letter-spacing: 1px;
   text-transform: none;
+  margin-top: 10px;
 }
 
 /* === Sidebar === */
@@ -126,9 +135,10 @@ h2 {
   flex-wrap: wrap;
 }
 
+
 .logo img {
-  width: 48px;
-  height: 48px;
+  width: 68px;
+  height: 68px;
   border-radius: 8px;
   object-fit: contain;
 }
